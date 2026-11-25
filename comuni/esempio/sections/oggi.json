@@ -1,0 +1,8 @@
+{
+  "title": { "it": "Oggi", "en": "Today" },
+  "blocks": [
+    { "type": "alert", "file": "avviso.txt" },
+    { "type": "clock", "column": 1, "style": "accent", "hour12": false },
+    { "type": "holidays", "title": { "it": "Prossime festività", "en": "Upcoming holidays" }, "column": 1, "count": 5, "calendar": "closed" }
+  ]
+}

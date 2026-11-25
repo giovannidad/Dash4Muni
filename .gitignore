@@ -1,0 +1,21 @@
+# Stato dei controlli generato da monitor.php
+/data/
+
+# Configurazione locale di un'installazione reale: non fa parte del repository.
+# Il comune mostrato di default si imposta con un proprio comune.json (vedi comune.example.json);
+# le cartelle dei comuni reali vanno aggiunte qui sotto, solo "esempio" è nel repository.
+/comune.json
+/comuni/*
+!/comuni/esempio/
+
+# Strumenti locali e file del sistema operativo
+/.claude/
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~
+
+# Prove locali
+/scratch/
+/tmp/

@@ -1,0 +1,10 @@
+{
+  "engines": [
+    { "id": "duckduckgo", "name": "DuckDuckGo", "url": "https://duckduckgo.com/?q={q}" },
+    { "id": "google", "name": "Google", "url": "https://www.google.com/search?q={q}" },
+    { "id": "bing", "name": "Bing", "url": "https://www.bing.com/search?q={q}" },
+    { "id": "brave", "name": "Brave", "url": "https://search.brave.com/search?q={q}" },
+    { "id": "wikipedia", "name": "Wikipedia (it)", "url": "https://it.wikipedia.org/w/index.php?search={q}" },
+    { "id": "github", "name": "GitHub", "url": "https://github.com/search?q={q}" }
+  ]
+}

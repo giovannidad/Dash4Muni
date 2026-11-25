@@ -1,0 +1,27 @@
+{
+  "title": { "it": "Infrastruttura", "en": "Infrastructure" },
+  "blocks": [
+    {
+      "title": { "it": "Questo server", "en": "This server" },
+      "column": 1,
+      "items": [
+        { "title": "Dashboard", "url": "index.html", "icon": "🏠", "description": { "it": "Stessa origine: legge il vero codice 200", "en": "Same origin: reads the real 200 code" } },
+        { "title": { "it": "Pagina inesistente", "en": "Missing page" }, "url": "non-esiste.html", "icon": "🚫", "description": { "it": "Esempio di pallino rosso (404)", "en": "Red dot example (404)" } }
+      ]
+    },
+    {
+      "title": { "it": "Servizi esterni", "en": "External services" },
+      "items": [
+        { "title": "GitHub", "url": "https://github.com", "icon": "🐙" },
+        { "title": "Cloudflare Status", "url": "https://www.cloudflarestatus.com", "icon": "☁️" },
+        { "title": "Wikipedia", "url": "https://it.wikipedia.org", "description": { "it": "Enciclopedia libera", "en": "Free encyclopedia" } }
+      ]
+    },
+    {
+      "title": { "it": "Senza controllo", "en": "No check" },
+      "items": [
+        { "title": "Esempio senza pallino", "url": "https://example.com", "check": false, "description": { "it": "\"check\": false disattiva il controllo", "en": "\"check\": false disables the check" } }
+      ]
+    }
+  ]
+}

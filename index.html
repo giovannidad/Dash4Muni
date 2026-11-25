@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Dash4Muni</title>
+  <script>
+    // Applica subito il tema salvato per evitare lampi di colore.
+    try {
+      var p = JSON.parse(localStorage.getItem('dash4muni.prefs') || '{}');
+      if (p.theme === 'light' || p.theme === 'dark') document.documentElement.dataset.theme = p.theme;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="tools">
+      <button type="button" id="refreshBtn" class="icon-btn" data-i18n-title="refresh" aria-label="Aggiorna">↻</button>
+      <button type="button" id="themeBtn" class="icon-btn" aria-label="Tema"></button>
+      <select id="langSel" data-i18n-title="language" aria-label="Lingua"></select>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <a id="logoLink" class="logo" hidden><img id="logo" alt=""></a>
+      <h1 id="siteTitle">Dash4Muni</h1>
+      <p id="siteSubtitle" class="subtitle" hidden></p>
+    </div>
+
+    <form id="searchForm" class="search" role="search" autocomplete="off">
+      <select id="engineSel" data-i18n-title="search.engine" aria-label="Motore di ricerca"></select>
+      <input id="q" type="search" name="q" data-i18n-placeholder="search.placeholder" aria-label="Cerca" enterkeyhint="search">
+      <button type="submit" data-i18n="search.submit">Cerca</button>
+    </form>
+
+    <div id="notice" class="notice" hidden></div>
+    <div id="sections"></div>
+  </main>
+
+  <footer id="footer" class="footer" hidden></footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

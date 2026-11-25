@@ -1,0 +1,27 @@
+{
+  "title": { "it": "Strumenti", "en": "Tools" },
+  "blocks": [
+    {
+      "title": { "it": "Sviluppo", "en": "Development" },
+      "items": [
+        { "title": "MDN Web Docs", "url": "https://developer.mozilla.org" },
+        { "title": "Can I use", "url": "https://caniuse.com" },
+        { "title": "Stack Overflow", "url": "https://stackoverflow.com" }
+      ]
+    },
+    {
+      "title": { "it": "Informazione", "en": "News" },
+      "items": [
+        { "title": "ANSA", "url": "https://www.ansa.it" },
+        { "title": "Hacker News", "url": "https://news.ycombinator.com" }
+      ]
+    },
+    {
+      "title": { "it": "Utilità", "en": "Utilities" },
+      "items": [
+        { "title": "OpenStreetMap", "url": "https://www.openstreetmap.org" },
+        { "title": "Meteo", "url": "https://www.ilmeteo.it" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": { "it": "Notizie", "en": "News" },
+  "blocks": [
+    {
+      "type": "rss",
+      "title": "ANSA",
+      "url": "https://www.ansa.it/sito/ansait_rss.xml",
+      "count": 6
+    },
+    {
+      "type": "rss",
+      "title": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "count": 6
+    },
+    {
+      "type": "rss",
+      "url": "https://it.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom&language=it",
+      "count": 4,
+      "showDescription": true,
+      "refreshMinutes": 60
+    }
+  ]
+}

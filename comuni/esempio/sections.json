@@ -1,0 +1,8 @@
+{
+  "sections": [
+    "sections/oggi.json",
+    "sections/notizie.json",
+    "sections/infrastruttura.json",
+    "sections/strumenti.json"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": { "it": "Comune di Esempio", "en": "Example Municipality" },
+  "subtitle": { "it": "Dashboard dei servizi", "en": "Services dashboard" },
+  "logo": "logo.svg",
+  "logoAlt": { "it": "Stemma del Comune", "en": "Municipality crest" },
+  "logoLink": "",
+  "footer": {
+    "text": { "it": "Autore:", "en": "Author:" },
+    "link": "https://www.giovannidaddabbo.com",
+    "linkLabel": "Giovanni D'Addabbo"
+  },
+  "defaultLanguage": "it",
+  "languages": { "it": "Italiano", "en": "English" },
+  "defaultTheme": "auto",
+  "defaultEngine": "duckduckgo",
+  "layout": { "maxColumns": 3, "minColumnWidth": 300, "maxWidth": 1600 },
+  "linkTarget": "_blank",
+  "searchInNewTab": false,
+  "refreshSeconds": 120,
+  "timeoutSeconds": 8,
+  "monitor": {
+    "enabled": false,
+    "intervalSeconds": 300,
+    "timeoutSeconds": 10,
+    "failuresBeforeAlert": 2,
+    "reminderHours": 0,
+    "notifyOnRecovery": false,
+    "verifySsl": true,
+    "timezone": "Europe/Rome",
+    "email": {
+      "enabled": true,
+      "to": "ict@example.org",
+      "from": "",
+      "fromName": "Dash4Muni",
+      "subject": "Attenzione: Servizio Down"
+    }
+  },
+  "feedProxy": "feed.php?url={url}"
+}

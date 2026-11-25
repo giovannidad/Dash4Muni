@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Segnalare una vulnerabilità di sicurezza
+    url: https://github.com/giovannidad/Dash4Muni/security/advisories/new
+    about: Non aprire una issue pubblica per problemi di sicurezza. Usa la segnalazione privata.

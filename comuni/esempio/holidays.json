@@ -1,0 +1,16 @@
+{
+  "holidays": [
+    { "date": "01-01", "name": { "it": "Capodanno", "en": "New Year's Day" } },
+    { "date": "01-06", "name": { "it": "Epifania", "en": "Epiphany" } },
+    { "easter": 0, "name": { "it": "Pasqua", "en": "Easter Sunday" } },
+    { "easter": 1, "name": { "it": "Lunedì dell'Angelo", "en": "Easter Monday" } },
+    { "date": "04-25", "name": { "it": "Festa della Liberazione", "en": "Liberation Day" } },
+    { "date": "05-01", "name": { "it": "Festa dei Lavoratori", "en": "Labour Day" } },
+    { "date": "06-02", "name": { "it": "Festa della Repubblica", "en": "Republic Day" } },
+    { "date": "08-15", "name": { "it": "Assunzione (Ferragosto)", "en": "Assumption Day" } },
+    { "date": "11-01", "name": { "it": "Ognissanti", "en": "All Saints' Day" } },
+    { "date": "12-08", "name": { "it": "Immacolata Concezione", "en": "Immaculate Conception" } },
+    { "date": "12-25", "name": { "it": "Natale", "en": "Christmas Day" } },
+    { "date": "12-26", "name": { "it": "Santo Stefano", "en": "St Stephen's Day" } }
+  ]
+}
