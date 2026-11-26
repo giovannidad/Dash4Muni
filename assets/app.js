@@ -57,13 +57,14 @@
     else { a.removeAttribute('target'); a.removeAttribute('rel'); }
   }
 
-  // Comune attivo: ?comune=nome nell'URL, altrimenti "default" di comune.json, altrimenti "esempio".
+  // Comune attivo: ?comune=nome nell'URL (se consentito), altrimenti "default" di comune.json, altrimenti "esempio".
   async function pickComune() {
     const ok = (n) => typeof n === 'string' && /^[a-z0-9_-]+$/i.test(n);
-    let name = new URLSearchParams(location.search).get('comune');
-    if (!ok(name)) {
-      try { name = (await getJSON('comune.json')).default; } catch (e) { name = null; }
-    }
+    let cfg = {};
+    try { cfg = await getJSON('comune.json'); } catch (e) { /* facoltativo */ }
+    // "allowQuery": false in comune.json ignora ?comune= e blocca il comune di default.
+    let name = cfg.allowQuery === false ? null : new URLSearchParams(location.search).get('comune');
+    if (!ok(name)) name = cfg.default;
     if (!ok(name)) name = 'esempio';
     state.comune = name;
     state.base = `comuni/${name}/`;

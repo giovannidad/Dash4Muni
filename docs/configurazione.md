@@ -33,6 +33,7 @@ I percorsi scritti nei file di un comune (logo, icone, `sections.json`, `file` d
 ## Scegliere il comune
 
 - `index.html?comune=esempio` mostra `comuni/esempio/`.
+- Per non passare mai il parametro imposta il comune in `comune.json`; con `"allowQuery": false` il parametro `?comune=` viene ignorato e la pagina mostra sempre il comune di default.
 - Senza parametro si usa il `default` del file `comune.json`; se il file non c'è si usa `esempio`.
 - `comune.json` è locale a ogni installazione e **non fa parte del repository**: crealo partendo da `comune.example.json`, con contenuto `{ "default": "<nome>" }`.
 - Nuovo comune: copia `comuni/esempio/` in `comuni/<nome>/`, modifica i file, poi apri `?comune=<nome>` oppure imposta il `default` in `comune.json`.

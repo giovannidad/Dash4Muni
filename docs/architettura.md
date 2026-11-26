@@ -25,7 +25,7 @@ Come è fatto Dash4Muni, per chi vuole modificarlo o estenderlo. Per l'uso e la 
 
 ```
 loadPrefs()                  preferenze da localStorage
-pickComune()                 ?comune= → comune.json → "esempio"; il nome è validato con /^[a-z0-9_-]+$/i
+pickComune()                 ?comune= (se `allowQuery` non è false) → comune.json → "esempio"; il nome è validato con /^[a-z0-9_-]+$/i
 settings.json                impostazioni del comune
 loadStrings()                assets/i18n/<lingua>.json
 applyTheme / setTitle / setFooter / applyLayout / renderLangs / applyStrings

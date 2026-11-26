@@ -6,6 +6,7 @@ Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it/1.1.0/). Le 
 
 ### Aggiunto
 - Pubblicazione automatica della demo (configurazione `esempio`) su GitHub Pages.
+- `allowQuery: false` in `comune.json`: ignora `?comune=` e usa sempre il comune di default.
 
 ## [1.0.0] - 2026-11-25
 

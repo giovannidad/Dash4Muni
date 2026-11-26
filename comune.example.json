@@ -1,1 +1,1 @@
-{ "default": "esempio" }
+{ "default": "esempio", "allowQuery": true }
