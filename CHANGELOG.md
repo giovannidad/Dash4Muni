@@ -4,6 +4,9 @@ Formato ispirato a [Keep a Changelog](https://keepachangelog.com/it/1.1.0/). Le 
 
 ## [Non rilasciato]
 
+### Aggiunto
+- Pubblicazione automatica della demo (configurazione `esempio`) su GitHub Pages.
+
 ## [1.0.0] - 2026-11-25
 
 Prima versione.

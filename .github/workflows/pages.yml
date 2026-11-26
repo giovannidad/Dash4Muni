@@ -1,0 +1,40 @@
+# Pubblica la dashboard di esempio su GitHub Pages.
+# Sul sito pubblicato non c'è PHP: i feed RSS esterni e il controllo dal server
+# non funzionano, il resto (layout, temi, orologio, festività, avvisi) sì.
+name: Pubblica demo su GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepara il sito (solo file statici e comune di esempio)
+        run: |
+          mkdir _site
+          cp -R index.html assets _site/
+          mkdir -p _site/comuni
+          cp -R comuni/esempio _site/comuni/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

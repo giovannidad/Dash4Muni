@@ -7,6 +7,8 @@ Dashboard per i **sistemi informativi di un comune**: un'unica pagina con ricerc
 - **PHP facoltativo**: serve solo per il controllo reale dello stato (codice HTTP 200), per l'avviso via email e per leggere i feed RSS di altri siti.
 - **Adattivo**: da 1 a 3 colonne in base alla larghezza della pagina, tema chiaro/scuro, interfaccia in più lingue (italiano e inglese inclusi).
 
+**Demo online:** https://giovannidad.github.io/Dash4Muni/ (configurazione di esempio, senza PHP: feed RSS esterni e controllo dal server non sono attivi).
+
 ## Avvio rapido
 
 1. Copia la cartella del progetto sul server (o avviane una copia in locale, vedi sotto).
